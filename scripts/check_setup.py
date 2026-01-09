@@ -111,6 +111,11 @@ def main():
     
     with mujoco.viewer.launch_passive(model, data) as viewer:
         
+        viewer.cam.azimuth = 90.00
+        viewer.cam.elevation = -45.00
+        viewer.cam.distance = 3.15
+        viewer.cam.lookat = [0.69, -0.00, -0.04]
+
         # We want 60Hz video.
         target_fps = 60.0
         time_per_frame = 1.0 / target_fps

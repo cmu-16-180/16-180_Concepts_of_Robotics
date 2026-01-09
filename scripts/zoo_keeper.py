@@ -63,6 +63,11 @@ def main():
     with mujoco.viewer.launch_passive(model, data) as viewer:
         steps_per_frame = 8
         dt_render = 1.0 / 60.0
+
+        viewer.cam.azimuth = 96.34
+        viewer.cam.elevation = -44.42
+        viewer.cam.distance = 4.09
+        viewer.cam.lookat = [0.25, 0.03, -0.09]
         
         while viewer.is_running():
             step_start = time.time()
@@ -121,6 +126,15 @@ def main():
             time_until_render = dt_render - (time.time() - step_start)
             if time_until_render > 0:
                 time.sleep(time_until_render)
+
+    # ON EXIT: Print the final camera position so we can use it
+    # to set up an initial view.
+    # print("Final Camera Coordinates:")
+    # print(f"viewer.cam.azimuth = {viewer.cam.azimuth:.2f}")
+    # print(f"viewer.cam.elevation = {viewer.cam.elevation:.2f}")
+    # print(f"viewer.cam.distance = {viewer.cam.distance:.2f}")
+    # print(f"viewer.cam.lookat = [{viewer.cam.lookat[0]:.2f}, {viewer.cam.lookat[1]:.2f}, {viewer.cam.lookat[2]:.2f}]")
+
 
 if __name__ == "__main__":
     main()

@@ -1,6 +1,7 @@
 # Course related things
 menagerie
 assignment_*
+MUJOCO_LOG.TXT
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

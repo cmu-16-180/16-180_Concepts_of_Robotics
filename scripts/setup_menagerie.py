@@ -8,7 +8,7 @@ def main():
     
     # Robots we want to download (add more here if needed later)
     # The Unitree Go1 is the dog we use for demos.
-    robots_to_include = ["unitree_go1"]
+    robots_to_include = ["unitree_go1", "shadow_hand"]
 
     print(f"--- Setting up MuJoCo Menagerie in './{target_dir}' ---")
     print(f"Targeting specific robots: {robots_to_include}")
