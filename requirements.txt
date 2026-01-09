@@ -1,0 +1,25 @@
+# --- 16-180 Course Dependencies ---
+
+# 1. Physics Engine
+# The official Google DeepMind MuJoCo bindings.
+# This runs the robot simulation and handles collisions/gravity.
+
+mujoco>=3.1.0
+
+# 2. Math & Data Structures
+# The fundamental library for scientific computing in Python.
+# We use this to handle images (as pixel arrays) and robot coordinates.
+
+numpy>=1.24.0
+
+# 3. Computer Vision
+# "Open Source Computer Vision Library".
+# Used for image processing (converting to HSV, finding blobs) and
+# displaying the "Robot Eye" debug window.
+
+opencv-python>=4.8.0
+
+# 4. Plotting & Visualization
+# Used for graphing sensor data
+
+matplotlib>=3.7.0
