@@ -17,7 +17,7 @@ Welcome to Concepts of Robotics.  We will be working with the Mujoco simulator--
 You need Git to download course materials and submit assignments.
 
 * **Windows:** Download "Git for Windows" from git-scm.com.
-  * During install, accept all default options.
+    * During install, accept all default options.
 * **macOS:** Open a terminal and type `git --version`. If not installed, it will prompt you to install the Apple Command Line Tools. Accept.
 * **Linux:** `sudo apt update && sudo apt install git`
 
@@ -38,7 +38,7 @@ This will create your main folder for the semester. Using Git from VSCode.
 ```https://github.com/cmu-16-180/16-180_Concepts_of_Robotics.git```
 5. It will pop open a directory selector. Navigate to where you want the class folder (e.g., Documents) and click "Select as Repository Destination".
 6. Wait for the download to finish. A popup will appear at the bottom right asking "Would you like to open the cloned repository?"
-  * **Click "Open".**
+    * **Click "Open".**
 
 Your file explorer on the left should now look like this:
 ```
@@ -56,14 +56,14 @@ Your file explorer on the left should now look like this:
 We will create one virtual environment for the entire semester. A virtual environment includes all the software (e.g. the Mujoco Simulator) you will need for the class.
 
 1. In the VS Code Terminal (ensure you are inside 16180_Concepts), run:
-  * **Windows:** `python -m venv venv`
-  * **Mac/Linux:** `python3 -m venv venv`
+    * **Windows:** `python -m venv venv`
+    * **Mac/Linux:** `python3 -m venv venv`
 2. Activate it:
-  * If VS Code asks "We noticed a new environment...," click **Yes.**
-  * Check your terminal prompt. It should start with `(venv)`.
-  * *If not active:*
-    * **Windows:** `.\venv\Scripts\activate`
-    * **Mac/Linux:** `source venv/bin/activate`
+    * If VS Code asks "We noticed a new environment...," click **Yes.**
+    * Check your terminal prompt. It should start with `(venv)`.
+    * *If not active:*
+        * **Windows:** `.\venv\Scripts\activate`
+        * **Mac/Linux:** `source venv/bin/activate`
 3. Install Dependencies:
 ```
 pip install --upgrade pip
