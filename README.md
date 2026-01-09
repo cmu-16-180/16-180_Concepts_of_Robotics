@@ -95,13 +95,20 @@ Run the following command in your terminal (ensure you are still in the `16-180_
 python scripts/setup_menagerie.py
 ```
 
+## Step 8: Run the Unitree Go1 and Shadow Hand Demos
 
-## Step 8: Run the Unitree Go1 Demo
+Now that the Menagerie is installed, run the `zoo_keeper.py` script included in the course shell to see a high-fidelity simulations based on **real robots**. Much of modern robotics research uses these models and simulators to get robots to do useful things.
 
-Now that the Menagerie is installed, run the `zoo_keeper.py` script included in the course shell to see a high-fidelity quadruped simulation.
+**Zoo Keeper Demo:** In this demo, you'll see a quadruped robot amble about. The script applies a period motion to the leg joints to form a gait. The simple gait allows the robot to move around---but obviously, it could much better. We will discuss some of the latest research in enabling better motions.
 
-* **Windows/Linux:** `python zoo_keeper.py`
-* **macOS:** `mjpython zoo_keeper.py`
+* **Windows/Linux:** `python scripts/zoo_keeper.py`
+* **macOS:** `mjpython scripts/zoo_keeper.py`
+
+**Rock-Paper-Scissors Demo:** In the next demo, you'll see a dexterous robot hand known as the "Shadow Hand" perform rock-paper-scissors. You can interact with this demo by telling the robot to change between the different poses using your keyboard (the script provides instructions on how to change pose). Try flipping it between different poses quickly.
+
+* **Windows/Linux:** `python scripts/rps.py`
+* **macOS:** `mjpython scripts/rps.py`
+
 
 **Interaction Guide:**
 
