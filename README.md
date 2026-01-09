@@ -41,11 +41,17 @@ https://github.com/cmu-16-180/16-180_Concepts_of_Robotics.git
 4. It will pop open a directory selector. Navigate to where you want the class folder (e.g., Documents) and click "Select as Repository Destination".
 5. Wait for the download to finish. A popup will appear at the bottom right asking "Would you like to open the cloned repository?"
     * **Click "Open".**
+6. If it asks "Do you trust the authors of the files in this folder?"
+    * Leave the checkbox next **unchecked** to "Trust the authors of all files in this parent folder ..." (You can check the box if you want, but it's not necessary for this class.
+    * **Click the button "Yes, I trust the authors"**
+7. If it asks, "The extension 'GitHub Copilot Chat' wants to sign in using GitHub'." You can cancel or allow to your preference (if you don't know, choose "Cancel")
 
 Your file explorer on the left should now look like this:
 ```
 16-180_Concepts_of_Robotics/
 ├── .gitignore
+├── LICENSE
+├── README.md (this file)
 ├── requirements.txt
 ├── scripts/
 │   ├── check_setup.py
