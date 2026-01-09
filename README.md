@@ -35,7 +35,9 @@ This will create your main folder for the semester. Using Git from VSCode.
 1. Open VS Code.
 2. Click "Clone Git Repositry..."
 3. Where it asks "Provide repositry URL or pick a repository source." Copy and paste this URL:
-```https://github.com/cmu-16-180/16-180_Concepts_of_Robotics.git```
+```
+https://github.com/cmu-16-180/16-180_Concepts_of_Robotics.git
+```
 5. It will pop open a directory selector. Navigate to where you want the class folder (e.g., Documents) and click "Select as Repository Destination".
 6. Wait for the download to finish. A popup will appear at the bottom right asking "Would you like to open the cloned repository?"
     * **Click "Open".**
