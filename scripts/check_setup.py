@@ -4,7 +4,7 @@ import numpy as np
 import time
 
 def main():
-    # 400 is a "Sweet Spot" for laptop CPUs. 1000 usually requires a desktop.
+    # 100 is a "Sweet Spot" for laptop CPUs. 400 usually requires a desktop.
     box_count = 100
     print(f"Loading the 'Chaos Arm' demo with {box_count} boxes...")
     
