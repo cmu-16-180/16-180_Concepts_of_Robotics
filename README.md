@@ -38,7 +38,7 @@ This will create your main folder for the semester. Using Git from VSCode.
 ```
 https://github.com/cmu-16-180/16-180_Concepts_of_Robotics.git
 ```
-4. It will pop open a directory selector. Navigate to where you want the class folder (e.g., Documents) and click "Select as Repository Destination".
+4. It will pop open a directory selector. Navigate to where you want the class folder (e.g., Documents) and click "Select as Repository Destination". This will create a folder called `16-180_Concepts_of_Robotics` under the directory you select (e.g., `Documents/16-180_Concepts_of_Robotics`).
 5. Wait for the download to finish. A popup will appear at the bottom right asking "Would you like to open the cloned repository?"
     * **Click "Open".**
 6. If it asks "Do you trust the authors of the files in this folder?"
@@ -88,17 +88,34 @@ Run the verification script included in the shell.
 
 ## Step 7: Install the Robot Zoo (Menagerie)
 
-We will use Git to download the library of robot models.
+We need the "Unitree Go1" robot model for our demos. The full Menagerie library is over 2GB, so we have provided a script that downloads only the robots we need (saving a LOT of space).
 
-Run the following command in your terminal (ensure you are still in the 16180_Concepts folder):
-
+Run the following command in your terminal (ensure you are still in the `16-180_Concepts_of_Robotics` folder):
 ```
-git clone https://github.com/google-deepmind/mujoco_menagerie.git menagerie
+python scripts/setup_menagerie.py
 ```
 
-This will clone the MuJoCo Menagerie into a menagerie folder within your course directory.
 
+## Step 8: Run the Unitree Go1 Demo
 
+Now that the Menagerie is installed, run the `zoo_keeper.py` script included in the course shell to see a high-fidelity quadruped simulation.
+
+* **Windows/Linux:** `python zoo_keeper.py`
+* **macOS:** `mjpython zoo_keeper.py`
+
+**Interaction Guide:**
+
+1.  **Visuals:** You should see a robot dog marching in place.
+2.  **Interaction:**
+    *   **Double-click** the robot's silver torso to select it (it will highlight).
+    *   **Apply Force:**
+        *   **Windows/Linux:** Hold **CTRL + Right Click** and drag.
+        *   **macOS:** Hold **Command (⌘) + Left Click** and drag (or Control + Two-finger click).
+    *   You can shove the robot to test its stability!
+
+### Next Steps
+
+You are now fully set up for the semester! Please wait for the announcement regarding **Assignment 1**, which will include instructions on how to download the assignment code into this folder.
 
 
 
