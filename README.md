@@ -7,7 +7,7 @@ Welcome to Concepts of Robotics.  We will be working with the Mujoco simulator--
 
 ## Step 1: Install Visual Studio Code (VS Code)
 
-1. Download and install from code.visualstudio.com.
+1. Download and install from https://code.visualstudio.com/.
 2. Open VS Code.
 3. **macOS Users:** If asked "Allow Electron to find devices?", click **Allow.**
 4. Install the Python extension (by Microsoft) via the Extensions tab on the left. (It may already be installed)
@@ -16,9 +16,9 @@ Welcome to Concepts of Robotics.  We will be working with the Mujoco simulator--
 
 You need Git to download course materials and submit assignments.
 
-* **Windows:** Download "Git for Windows" from git-scm.com.
+* **Windows:** Download "Git for Windows" from https://git-scm.com.
     * During install, accept all default options.
-* **macOS:** Open a terminal and type `git --version`. If not installed, it will prompt you to install the Apple Command Line Tools. Accept.
+* **macOS:** Follow the instructions here: https://git-scm.com/install/mac
 * **Linux:** `sudo apt update && sudo apt install git`
 
 ## Step 3: Install Python
@@ -26,7 +26,10 @@ You need Git to download course materials and submit assignments.
 We recommend **Python 3.11**.
 
 * **Windows:** python.org/downloads. **CRITICAL:** Check **"Add Python to PATH"** before clicking Install.
-* **macOS:** Download the universal installer from [python.org], or use, if you have Homebrew, use `brew install python@3.11.`
+* **macOS:**
+    * Option 1: Download the universal installer from https://python.org, or use this direct link: [download python 11](https://www.python.org/ftp/python/3.11.7/python-3.11.7-macos11.pkg). Once downloaded, double click it, and click through the prompts until it is installed.
+    * Option 2: If you have Homebrew, use `brew install python@3.11.`
+    * Option 3: If you have MacPorts, use `sudo port install python311`
 
 ## Step 4: Clone the This Repo
 
