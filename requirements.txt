@@ -23,3 +23,9 @@ opencv-python>=4.8.0
 # Used for graphing sensor data
 
 matplotlib>=3.7.0
+seaborn>=0.13.0
+pandas>=2.3.0
+
+# 5. Scipy for scientific methods, optimizations, etc.
+
+scipy>=1.16.0
