@@ -12,11 +12,21 @@ Welcome to Concepts of Robotics.  We will be working with the Mujoco simulator--
         1. Download VS code <br/> [![Download VS Code](screenshots/thumb_macos_vs_001_download_vs_code.png)](screenshots/macos_vs_001_download_vs_code.png)
         2. Open the downloaded file it should extract a file called "Visual Studio Code" <br/> [![Open on downloaded file](screenshots/thumb_macos_vs_002_download_zip.png)](screenshots/macos_vs_002_download_zip.png) 
         3. Find that file and drag it to the "Applications" folder (usually on the left side bard) <br/> [![Open Downloads folder](screenshots/thumb_macos_vs_003_downloads_folder.png)](screenshots/macos_vs_003_downloads_folder.png)
+    (screenshots/macos_vs_003_downloads_folder.png)
+    * **Windows**
+        1. Download VS code from Microsoft Store
+        <br/> [![Download VS Code](screenshots/thumb_windows_vs_001_store.png)](screenshots/windows_vs_001_store.png)
+
 2. Open VS Code.
     * **macOS:**
         1. In the applications folder, double-click to open Visual Studio Code <br/> [![Open Visual Studio Code](screenshots/thumb_macos_vs_004_applications_folder.png)](screenshots/macos_vs_004_applications_folder.png)
         2. If prompted about it being downloaded from the internet, click "Open" <br/> [![Internet download prompt](screenshots/thumb_macos_vs_005_download_from_internet.png)](screenshots/macos_vs_005_download_from_internet.png)
         3. If asked "Allow Electron to find devices?", click **Allow.**
+    click **Allow.**
+    * **Windows**
+        1. Go to Start > Search VS Code > Click to open Visual Studio Code
+        <br/> [![Open Visual Studio Code](screenshots/thumb_windows_vs_001_search.png)](screenshots/windows_vs_001_search.png)
+
 3. Install the Python extension (by Microsoft) via the Extensions tab on the left. (It may already be installed)
     * Click on the icon on the left with four boxes to open the extensions panel <br/> [![First Run](screenshots/thumb_macos_vs_006_first_run.png)](screenshots/macos_vs_005_download_from_internet.png)
     * Type "Python" in the search bar, and select the "Python (by Microsoft)" extension. Ensure that it is installed. <br/> [![First Run](screenshots/thumb_macos_vs_007_python_extension.png)](screenshots/macos_vs_007_python_extension.png)
@@ -38,7 +48,9 @@ You need Git to download course materials and submit assignments.
 
 We recommend **Python 3.11**.
 
-* **Windows:** python.org/downloads. **CRITICAL:** Check **"Add Python to PATH"** before clicking Install.
+* **Windows:** 
+    * Download python 3.13 from Microsoft Store
+        <br/> [![Download VS Code](screenshots/thumb_windows_python_002_store.png)](screenshots/windows_python_002_store.png)
 * **macOS:**
     * Option 1: Download the universal installer from https://python.org, or use this direct link: [download python 11](https://www.python.org/ftp/python/3.11.7/python-3.11.7-macos11.pkg). Once downloaded, double click it, and click through the prompts until it is installed.
     * Option 2: If you have Homebrew, use `brew install python@3.11.`
@@ -67,7 +79,7 @@ We will create one virtual environment for the entire semester. A virtual enviro
 
 1. Open VS Code Terminal from the menu: `Terminal > New Terminal` (ensure you are inside `16-180_Concepts_of_Robotics` workspace) <br/> [![Open Terminal](screenshots/thumb_macos_venv_001_open_terminal.png)](screenshots/macos_venv_001_open_terminal.png)
 2. Create the virtual environment (aka "venv") by typing into the terminal:
-    * **Windows:** `python -m venv venv`
+    * **Windows:** `python -m venv venv` <br/> [![Create venv](screenshots/thumb_windows_vs_001_env.png)](screenshots/windows_vs_001_env.png)
     * **Mac/Linux:** `python3 -m venv venv` <br/> [![Create venv](screenshots/thumb_macos_venv_002_create_venv.png)](screenshots/macos_venv_002_create_venv.png)
 2. Activate it:
     * If VS Code asks "We noticed a new environment...," click **Yes.**
@@ -82,7 +94,7 @@ We will create one virtual environment for the entire semester. A virtual enviro
 ## Step 6: Verify Installation
 
 Run the verification script included in the shell.
-* **Windows/Linux:** `python scripts/check_setup.py`
+* **Windows/Linux:** `python .\scripts\check_setup.py`
 * **macOS:** `mjpython scripts/check_setup.py` (if you use `python` here, instead of `mjpython` you will get a somewhat informative message telling you to use `mjpython instead.) <br/> [![wrong python](screenshots/thumb_macos_check_001_wrong_python.png)](screenshots/macos_check_001_wrong_python.png) [![correct python](screenshots/thumb_macos_check_002_mjpython.png)](screenshots/macos_check_002_mjpython.png)
 
 *Success Criteria:* A simulation window appears with a crude robot arm and a lot of boxes.
@@ -112,13 +124,13 @@ Now that the Menagerie is installed, run the `zoo_keeper.py` script included in 
 ### Demo 1: Zoo Keeper Demo:
 In this demo, you'll see a quadruped robot amble about. The script applies a period motion to the leg joints to form a gait. The simple gait allows the robot to move around---but obviously, it could much better. We will discuss some of the latest research in enabling better motions.
 
-* **Windows/Linux:** `python scripts/zoo_keeper.py`
+* **Windows/Linux:** `python .\scripts\zoo_keeper.py`
 * **macOS:** `mjpython scripts/zoo_keeper.py`
 
 ### Demo 2: Rock-Paper-Scissors Demo:
 In the next demo, you'll see a dexterous robot hand known as the "Shadow Hand" perform rock-paper-scissors. You can interact with this demo by telling the robot to change between the different poses using your keyboard (the script provides instructions on how to change pose). Try flipping it between different poses quickly.
 
-* **Windows/Linux:** `python scripts/rps.py`
+* **Windows/Linux:** `python .\scripts\rps.py`
 * **macOS:** `mjpython scripts/rps.py`
 
 
