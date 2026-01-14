@@ -46,7 +46,7 @@ You need Git to download course materials and submit assignments.
 
 ## Step 3: Install Python
 
-We recommend **Python 3.11**.
+We recommend **Python 3.11**. (Important: we have only tested on 3.11. It may work on 3.10 or 3.12. It was reported to NOT work on 3.14.)
 
 * **Windows:** 
     * Download python 3.13 from Microsoft Store
